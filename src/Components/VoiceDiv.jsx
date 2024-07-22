@@ -6,7 +6,7 @@ const VoiceDiv = () => {
         <>
             <div className="w-full bg-custom h-customvoicediv rounded-xl flex flex-col">
                 <h1 className="text-2xl font-extrabold uppercase text-center  my-4">Um pouco sobre nós</h1>
-                <div className="w-full flex">
+                <div className="w-full flex customvoicewrapper">
                     <div className="h-full w-1/2 flex items-center justify-center">
                         <AudioPlayer/>
                     </div>

@@ -81,6 +81,18 @@ body {
     height: 65vh;
 }
 
+@media (max-width:650px){
+    .h-customvoicediv {
+        height: fit-content;
+    }
+
+    .customvoicewrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}
 
 
 
