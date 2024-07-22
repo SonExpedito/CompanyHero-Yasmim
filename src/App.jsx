@@ -5,6 +5,7 @@ import Cards from './Components/Cards';
 import Banner from './Components/Banner'
 import VoiceDiv from './Components/VoiceDiv';
 import Carousel from './Components/Carousel';
+import Footer from './Components/Footer'
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
         <Cards/>
         <VoiceDiv/>
         <Carousel/>
+        <Footer/>
     </>
   )
 }
