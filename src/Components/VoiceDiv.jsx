@@ -10,7 +10,7 @@ const VoiceDiv = () => {
                     <div className="h-full w-1/2 flex items-center justify-center">
                         <AudioPlayer/>
                     </div>
-                    <div className="h-full w-1/2 flex items-center justify-center">
+                    <div className="h-full w-1/2 flex items-center justify-center px-4">
                             <p className="text-center font-medium px-8 bg-gray-200 rounded-xl py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cum aut. Id minima incidunt, voluptate sit consequuntur iusto! Mollitia eligendi consequatur ea et ut praesentium adipisci impedit reprehenderit sapiente veniam!</p>
                     </div>
                 </div>
