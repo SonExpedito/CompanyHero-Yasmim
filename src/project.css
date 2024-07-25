@@ -81,6 +81,12 @@ body {
     height: 65vh;
 }
 
+.hoverbutton:hover{
+    background: #ff0066;
+    transition: all 0.2s ease-in;
+}
+
+
 @media (max-width:650px) {
     .h-customvoicediv {
         height: fit-content;
@@ -197,7 +203,7 @@ body {
     left: 50%;
     transform: translate(-90%, 80%);
     text-align: center;
-    background-color: #e3cbd8 ;
+    background-color: #e3cbd8;
     opacity: 0.9;
     padding: 10px;
     border-radius: 5px;
@@ -210,7 +216,7 @@ body {
 }
 
 .custom-bullet {
-    background: #d1d5db  !important;
+    background: #d1d5db !important;
     width: 10px;
     height: 10px;
     display: flex;
@@ -221,7 +227,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background: #e3cbd8  !important;
+    background: #e3cbd8 !important;
     width: 12px;
     height: 12px;
     opacity: 1;
@@ -230,8 +236,8 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background: #ff0066  !important;
-    
+    background: #ff0066 !important;
+
 }
 
 .custom-button-next,
@@ -268,19 +274,66 @@ body {
     display: none !important;
 }
 
-@media (max-width: 1200px){
-    .swiper{
+
+@media (max-width:1309px) {
+    .swiper-slide .text-overlay {
+        transform: translate(-90%, 70%);
+    }
+
+}
+
+@media (max-width: 1290px) {
+    .swiper-slide .text-overlay {
+        top: 42%;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    .swiper {
         width: 60%;
     }
 
 }
 
-@media (max-width: 900px){
-    .swiper{
+@media (max-width: 900px) {
+    .swiper {
         width: 70%;
     }
 
 }
+
+@media (max-width:666px) {
+    .swiper-slide .text-overlay {
+        transform: translate(-90%, 60%);
+    }
+
+    .swiper-slide .text-overlay p {
+        font-size: 0.875rem;
+        /* 14px */
+        line-height: 1.25rem;
+    }
+
+}
+
+
+@media (max-width:580px) {
+    .swiper-slide .text-overlay {
+        transform: translate(-90%, 20%);
+    }
+}
+
+
+@media (max-width:400px) {
+    
+    .swiper-slide .text-overlay {
+        top: 45%;
+        transform: translate(-90%, 10%);
+    }
+}
+
+
 
 /*Footer*/
 .footer {

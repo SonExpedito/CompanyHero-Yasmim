@@ -15,8 +15,8 @@ const App = () => {
       
         <Navbar />
         <Banner/>
-        <Cards/>
         <VoiceDiv/>
+        <Cards/>
         <Carousel/>
         <Footer/>
     </>
