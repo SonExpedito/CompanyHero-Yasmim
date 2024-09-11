@@ -1,6 +1,5 @@
 import React from "react";
 import AudioPlayer from "./AudioPlayer";
-import { Link } from "react-router-dom"; // Make sure to import Link if you're using react-router-dom
 
 const VoiceDiv = () => {
     const CampusInc = `
@@ -23,11 +22,6 @@ aderisse ao serviço.
                     <p className="text-center font-medium px-8 bg-gray-200 rounded-xl py-4 audiotext">
                         {CampusInc}
                     </p>
-                    <Link to="/test">
-                        <button className="mt-4 px-6 py-2 bg-gray-200 textitles font-semibold rounded-lg shadow-md hoverbutton hover:text-gray-200">
-                            Faça um Exame
-                        </button>
-                    </Link>
                 </div>
             </div>
         </div>

@@ -17,57 +17,60 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 const Carousel = () => {
     const CarouselSlides = [
         {
-            title: "Empresa",
-            text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, sed.",
-            img: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+            title: "Curitiba",
+            text: "Curitiba foi uma das cidades escolhidas na nossa expansão em 2021.",
+            img: "https://cdn.companyhero.com/static/images/endereco_virtual_c.2e16d0ba.fill-1200x630.jpegquality-90.jpg"
         },
         {
-            title: "Empresa",
-            text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, sed.",
-            img: "https://images7.alphacoders.com/133/1338183.png"
+            title: "Recife",
+            text: "Com a expansão avançando, Recife foi incluída no plano de crescimento.",
+            img: "https://cdn.companyhero.com/static/images/CAPA-SEO-RECIFE.2e16d0ba.fill-1200x630.jpegquality-90.jpg"
         },
         {
-            title: "Empresa",
-            text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, sed.",
-            img: "https://images.unsplash.com/photo-1507752533523-5186b0bc4c43?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D"
+            title: "Belo Horizonte",
+            text: "Com a expansão avançando, Belo Horizonte também foi incluída no plano de crescimento. ",
+            img: "https://cdn.companyhero.com/static/images/escritorio_virtual.2e16d0ba.fill-1200x630.jpegquality-90.jpg"
         },
     ];
 
     return (
-        <div className='h-customcarousel flex justify-center align-center'>
-            <Swiper
-                pagination={{
-                    dynamicBullets: true,
-                    clickable: true,
-                    renderBullet: (index, className) => `<span class="${className} custom-bullet"></span>`,
-                }}
-                navigation={{
-                    nextEl: '.custom-button-next',
-                    prevEl: '.custom-button-prev',
-                }}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
-                loop={true}
-                modules={[Pagination, Navigation, Autoplay]}
-                className="mySwiper"
-            >
-                {CarouselSlides.map((data, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="slide-content">
-                            <img src={data.img} alt="" />
-                            <div className="text-overlay">
-                                <h1 className='font-bold'>{data.title}</h1>
-                                <p>{data.text}</p>
+        <>
+            <h1 className='text-2xl font-bold text-center mt-6'>Lugares que a Company Hero passou trabalhar:</h1>
+            <div className='h-customcarousel flex justify-center align-center'>
+                <Swiper
+                    pagination={{
+                        dynamicBullets: true,
+                        clickable: true,
+                        renderBullet: (index, className) => `<span class="${className} custom-bullet"></span>`,
+                    }}
+                    navigation={{
+                        nextEl: '.custom-button-next',
+                        prevEl: '.custom-button-prev',
+                    }}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    className="mySwiper"
+                >
+                    {CarouselSlides.map((data, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="slide-content">
+                                <img src={data.img} alt="" />
+                                <div className="text-overlay">
+                                    <h1 className='font-bold'>{data.title}</h1>
+                                    <p>{data.text}</p>
+                                </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
-                <div className="custom-button-next"><FaArrowRight /></div>
-                <div className="custom-button-prev"><FaArrowLeft /></div>
-            </Swiper>
-        </div>
+                        </SwiperSlide>
+                    ))}
+                    <div className="custom-button-next"><FaArrowRight /></div>
+                    <div className="custom-button-prev"><FaArrowLeft /></div>
+                </Swiper>
+            </div>
+        </>
     );
 }
 
