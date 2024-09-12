@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBusinessTime, FaBuildingUser, FaCalendarXmark} from "react-icons/fa6";
+import { FaBusinessTime, FaBuildingUser, FaCalendarXmark } from "react-icons/fa6";
 import { FiUserX } from "react-icons/fi";
 
 const Cards = () => {
@@ -45,18 +45,17 @@ const Cards = () => {
                     </div>
 
                     {/**Card */}
-                    <div className="w-80 h-40 bg-gray-200 flex flex-col rounded-xl items-center gap-1 py-2 ">
-                        <h1 className="text-xl font-bold textitles h-1/6 ">TFE’S VENCIDAS</h1>
+                    <div className="w-80 h-36 bg-gray-200 flex flex-col rounded-xl items-center gap-1 py-2">
+                        <h1 className="text-xl font-bold  textitles h-1/6">TFE’S VENCIDAS</h1>
                         <div className="w-full flex h-5/6 ">
-                            <div className="w-1/2 h-full  flex justify-center items-center">
+                            <div className="w-1/2  flex justify-center items-center">
                                 <FaCalendarXmark className="bg-gray-300 rounded-full  h-20 w-20    px-4 py-4" />
                             </div>
                             <div className="w-1/2 flex justify-center items-center">
-                                <p className="font-normal text-justify pr-1">{Card3} </p>
+                                <p className="font-normal text-justify pr-2">{Card3}</p>
                             </div>
                         </div>
                     </div>
-
                     {/**Card */}
                     <div className="w-80 h-36 bg-gray-200 flex flex-col rounded-xl items-center gap-1 py-2">
                         <h1 className="text-xl font-bold  textitles h-1/6">Clientes Furiosos</h1>

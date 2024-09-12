@@ -27,7 +27,7 @@ body {
 }
 
 
-@media (max-width:900px) {
+@media (max-width:920px) {
     .h-custombanner {
         flex-direction: column-reverse;
         align-items: center;
@@ -60,14 +60,15 @@ body {
 /*Cards*/
 .h-customcardscontainer {
     height: 60vh;
+    margin-top: 1rem;
+        margin-bottom: 1rem;
 }
 
 
 @media (max-width: 767px) {
     .h-customcardscontainer {
         height: min-content;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        
     }
 }
 
@@ -77,13 +78,13 @@ body {
     height: 65vh;
 }
 
-.hoverbutton:hover{
+.hoverbutton:hover {
     background: #ff0066;
     transition: all 0.2s ease-in;
 }
 
 
-@media (max-width:650px) {
+@media (max-width:800px) {
     .h-customvoicediv {
         height: fit-content;
     }
@@ -300,7 +301,11 @@ body {
 
 }
 
-@media (max-width:666px) {
+@media (max-width:680px) {
+    .swiper {
+        width: 90%;
+    }
+
     .swiper-slide .text-overlay {
         transform: translate(-90%, 60%);
     }
@@ -322,7 +327,7 @@ body {
 
 
 @media (max-width:400px) {
-    
+
     .swiper-slide .text-overlay {
         top: 45%;
         transform: translate(-90%, 10%);
@@ -338,15 +343,15 @@ body {
 }
 
 /*TextArea*/
-.h-textbox{
+.h-textbox {
     height: 82vh;
 }
 
-.h-textarea{
+.h-textarea {
     height: 50vh;
 }
 
-.border-custom{
+.border-custom {
     border-width: 3px;
     border-color: #f7a5c6;
 }
@@ -354,12 +359,12 @@ body {
 
 
 /*FinalText*/
-.h-finaltext{
-    height: 75vh;
+.h-finaltext {
+    height: 52vh;
 }
 
 
-@media (max-width:960px){
+@media (max-width:960px) {
     .h-finaltext {
         flex-direction: column;
         height: fit-content;
@@ -371,17 +376,17 @@ body {
         height: fit-content;
     }
 
-    .sidecontainer{
+    .sidecontainer {
         height: fit-content;
         width: 100vw;
     }
 
-    .imgcontainer{
-        height: 75vh !important; 
+    .imgcontainer {
+        height: 52vh !important;
     }
 
-    .imgtextarea{
-        height: 50vh !important; 
+    .imgtextarea {
+        height: 50vh !important;
     }
 
 }
